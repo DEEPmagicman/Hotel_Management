@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hotel home</title>
+    <script>
+      function validateform() {
+        if (document.form.email.value == "") {
+          alert("Enter E-mail.");
+          document.form.email.focus();
+          return false;
+        }
+
+        if (document.form.pass.value == "") {
+          alert("Enter Password");
+          document.form.pass.focus();
+          return false;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img src="assets/hotel.png" alt="404" />
+      <div class="nv">
+        <span><a href="review.html">review</a></span>
+        <span><a href="contact.html">contact</a></span>
+        <span><a href="reg.html">signup</a></span>
+      </div>
+    </header>
+    <form
+      onsubmit="return validateform()"
+      action="find.php"
+      method="POST"
+      name="form"
+    >
+      <input id="tx" type="text" name="email" placeholder="E-Mail" /><br />
+      <input
+        id="tx"
+        type="password"
+        name="pass"
+        placeholder="password"
+      /><br /><br />
+      <input id="sub" type="submit" value="login" /><br /><br />
+      <a href="reg.html">don'n have a account ? create one 😉</a>
+    </form>
+
+    <br /><br /><br /><br />
+    <img
+      id="hero"
+      src="assets/valeriia-bugaiova-_pPHgeHz1uk-unsplash.png"
+      alt=""
+    />
+  </body>
+</html>

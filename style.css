@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-top: 75px;
+  font-family: "Montserrat";
+}
+
+section {
+  background-size: cover;
+}
+.nv {
+  float: right;
+}
+span {
+  padding-left: 40px;
+  font-weight: 600;
+  font-size: 18px;
+}
+#hero {
+  margin-top: 60px;
+  float: right;
+}
+
+form {
+  position: absolute;
+  margin-top: 15%;
+}
+
+#tx {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.49px solid #919191;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 21px;
+  width: 490px;
+  height: 50px;
+}
+#tx:focus {
+  outline: none;
+  border-bottom: 3.25px solid #202020;
+  transition: ease-in;
+  transition-duration: 0.3s;
+}
+#sub {
+  width: 140px;
+  height: 45px;
+  border: none;
+  background-color: #202020;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 4.6px;
+  cursor: pointer;
+}
+#sub:hover {
+  background-color: #ffffff;
+  color: #202020;
+  border: 2px solid #202020;
+  transition: ease-in;
+  transition-duration: 0.2s;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+a:hover {
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+.fa {
+  margin: 10px;
+  padding-right: 20px;
+}
